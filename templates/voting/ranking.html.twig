@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ award.name }}{% endblock %}
+
+{% block body %}
+    <div class="result-box">
+        <h3>Ranking {{ award.name }}</h3>
+        <div class="ranking">
+            {% for voter in award.ranking %}
+            <a class="voter" href="{{ path('app_voting_result', {id: voter.id, show_token: voter.showToken}) }}">
+                <div class="position">{{ loop.index }}</div>
+                <div class="points">{{ voter.winnerVotes|length }}</div>
+                <div class="name">{{ voter.name }}</div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

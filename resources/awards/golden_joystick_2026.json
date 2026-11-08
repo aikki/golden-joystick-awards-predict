@@ -1,0 +1,304 @@
+[
+  {
+    "name": "Najlepsza gra roku",
+    "nominees": [
+      "007 First Light",
+      "Big Walk",
+      "Control Resonant",
+      "Crimson Desert",
+      "Dispatch",
+      "Forza Horizon 6",
+      "Phantom Blade Zero",
+      "Pokémon Pokopia",
+      "Pragmata",
+      "Resident Evil Requiem",
+      "Star Wars: Galactic Racer",
+      "The Blood of Dawnwalker"
+    ]
+  },
+  {
+    "name": "Najlepsza gra we wczesnym dostępie",
+    "nominees": [
+      "Slay the Spire 2",
+      "Subnautica 2",
+      "Dead as Disco",
+      "Wardogs",
+      "Menace",
+      "skate."
+    ]
+  },
+  {
+    "name": "Najlepszy projekt wizualny",
+    "nominees": [
+      "Resonance: A Plague Tale Legacy",
+      "Forza Horizon 6",
+      "Saros",
+      "Phonopolis",
+      "Control Resonant",
+      "Orbitals"
+    ]
+  },
+  {
+    "name": "Najlepsza gra sieciowa",
+    "nominees": [
+      "Big Walk",
+      "Valheim",
+      "Marvel Tōkon: Fighting Souls",
+      "Marathon",
+      "ARC Raiders",
+      "Meccha Chameleon"
+    ]
+  },
+  {
+    "name": "Nadal grane (mobilnie)",
+    "nominees": [
+      "Genshin Impact",
+      "Honkai: Star Rail",
+      "Marvel Snap",
+      "Pokémon Go",
+      "Wuthering Waves",
+      "Monopoly Go!",
+      "Old School RuneScape",
+      "NTE: Neverness to Everness",
+      "Sky: Children of the Light",
+      "Roblox",
+      "Balatro",
+      "Tom Clancy's Rainbow Six Mobile"
+    ]
+  },
+  {
+    "name": "Najbardziej wyczekiwana gra",
+    "nominees": [
+      "The Witcher 4",
+      "God of War Laufey",
+      "Black Myth: Zhong Kui",
+      "Intergalactic: The Heretic Prophet",
+      "Fable",
+      "Final Fantasy VII Revelation",
+      "Kingdom Hearts IV",
+      "Persona 6",
+      "The Expanse: Osiris Reborn",
+      "Metro 2039",
+      "Total War: Warhammer 40,000",
+      "Stranger Than Heaven",
+      "Tides of Annihilation",
+      "Exodus",
+      "Tomb Raider: Legacy of Atlantis",
+      "Resident Evil Veronica",
+      "Alien: Isolation 2",
+      "No Law",
+      "Stuntman: Hollywood",
+      "Ananta"
+    ]
+  },
+  {
+    "name": "Gra roku na PC",
+    "nominees": [
+      "Big Walk",
+      "Escape from Tarkov",
+      "Valheim",
+      "Star Wars Zero Company",
+      "The Blood of Dawnwalker",
+      "Esoteric Ebb",
+      "Mewgenics",
+      "Meccha Chameleon",
+      "Crimson Desert",
+      "Order of the Sinking Star"
+    ]
+  },
+  {
+    "name": "Gra roku na konsolach",
+    "nominees": [
+      "Resident Evil Requiem",
+      "Pragmata",
+      "Pokémon Pokopia",
+      "007 First Light",
+      "Forza Horizon 6",
+      "Fire Emblem: Fortune's Weave",
+      "Onimusha: Way of the Sword",
+      "LEGO Batman: Legacy of the Dark Knight",
+      "Saros",
+      "Nioh 3"
+    ]
+  },
+  {
+    "name": "Najlepsza gra niezależna",
+    "nominees": [
+      "Big Walk",
+      "Valheim",
+      "Order of the Sinking Star",
+      "Titanium Court",
+      "Mixtape",
+      "Denshattack!",
+      "Esoteric Ebb",
+      "Mouse: P.I. For Hire",
+      "Reanimal",
+      "Sovereign Tower"
+    ]
+  },
+  {
+    "name": "Najlepsza adaptacja gry",
+    "nominees": [
+      "Fallout (Season 2)",
+      "Iron Lung",
+      "Resident Evil",
+      "Exit 8",
+      "Mortal Kombat II",
+      "Devil May Cry (Season 2)"
+    ]
+  },
+  {
+    "name": "Najlepszy remake/remaster",
+    "nominees": [
+      "Trails in the Sky 2nd Chapter",
+      "Gothic 1 Remake",
+      "Assassin's Creed Black Flag Resynced",
+      "The Witcher 3: Wild Hunt – Remastered",
+      "Metal Gear Solid: Master Collection Vol.2",
+      "Star Fox"
+    ]
+  },
+  {
+    "name": "Najlepszy zwiastun",
+    "nominees": [
+      "Big Walk – Release Date Announcement",
+      "Resident Evil Requiem – Evil Has Always Had A Name",
+      "Mouse: P.I. For Hire | Official Launch Trailer",
+      "Prove You're Human – Announcement Trailer",
+      "Cairn – Launch Trailer",
+      "Battlefield 6 x Top Gun: Carrier Strike Cinematic Trailer"
+    ]
+  },
+  {
+    "name": "Najlepsza rola drugoplanowa",
+    "nominees": [
+      "Troy Baker – Nathaniel Essex in Marvel's Wolverine",
+      "Vic Michaelis – Runa Blask in Star Wars Zero Company",
+      "Lennie James – John Greenway in 007 First Light",
+      "Terry O'Quinn – Richard in Silent Hill: Townfall",
+      "Frankie Kevich – Zoe de Vera in Control Resonant",
+      "Grace Saif – Diana in Pragmata"
+    ]
+  },
+  {
+    "name": "Nadal grane (PC i konsole)",
+    "nominees": [
+      "No Man's Sky",
+      "Helldivers 2",
+      "Minecraft",
+      "Fortnite",
+      "The Elder Scrolls Online",
+      "Warframe",
+      "GTA Online",
+      "Hitman World of Assassination",
+      "Apex Legends",
+      "World of Warcraft",
+      "Palworld",
+      "Call of Duty: Warzone"
+    ]
+  },
+  {
+    "name": "Najlepszy sprzęt gamingowy",
+    "nominees": [
+      "Sony INZONE M10S II",
+      "Steam Controller",
+      "Secretlab ATLAS",
+      "Logitech G PRO X2 SUPERSTRIKE",
+      "Turtle Beach Stealth Pro II",
+      "Razer Viper V4 Pro"
+    ]
+  },
+  {
+    "name": "Najlepsze rozszerzenie",
+    "nominees": [
+      "Doom: The Dark Ages | Revelations",
+      "World of Warcraft: Midnight",
+      "Dave the Diver – In the Jungle Content Pack",
+      "Quake: Dawn of the Machine",
+      "The Alters: Last Variable",
+      "Cult of the Lamb: Woolhaven"
+    ]
+  },
+  {
+    "name": "Najlepszy projekt dźwięku",
+    "nominees": [
+      "Rhythm Heaven Groove",
+      "Big Walk",
+      "Saros",
+      "Marathon",
+      "Star Wars: Galactic Racer",
+      "Onimusha: Way of the Sword"
+    ]
+  },
+  {
+    "name": "Najlepsza fabuła",
+    "nominees": [
+      "007 First Light",
+      "The Blood of Dawnwalker",
+      "Dispatch",
+      "Zero Parades: For Dead Spies",
+      "Silent Hill: Townfall",
+      "Fire Emblem: Fortune's Weave"
+    ]
+  },
+  {
+    "name": "Najlepsza ścieżka dźwiękowa",
+    "nominees": [
+      "Lumines Arise",
+      "Mewgenics",
+      "Mixtape",
+      "Crimson Desert",
+      "Dispatch",
+      "007 First Light"
+    ]
+  },
+  {
+    "name": "Najlepsza rola pierwszoplanowa",
+    "nominees": [
+      "Liam McIntyre – Wolverine in Marvel's Wolverine",
+      "Patrick Gibson – James Bond in 007 First Light",
+      "Aaron Paul – Robert Robertson III in Dispatch",
+      "Angela Sant'Albano – Grace Ashcroft in Resident Evil Requiem",
+      "Will de Renzy-Martin – Coen in The Blood of Dawnwalker",
+      "Anna Demetriou – Sophia in Resonance: A Plague Tale Legacy"
+    ]
+  },
+  {
+    "name": "Najlepsza gra niezależna (samodzielnie opublikowana)",
+    "nominees": [
+      "Mewgenics",
+      "Mina the Hollower",
+      "Perfect Tides: Station to Station",
+      "Phonopolis",
+      "The Incident at Galley House",
+      "Meccha Chameleon",
+      "Rhythm Doctor",
+      "Fields of Mistria",
+      "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors",
+      "Cairn"
+    ]
+  },
+  {
+    "name": "Studio roku",
+    "nominees": [
+      "Capcom",
+      "House House",
+      "IO Interactive",
+      "Nintendo EPD",
+      "Frogwares",
+      "Square Enix"
+    ]
+  },
+  {
+	  "name": "Wybór streamerów",
+	  "nominees": [
+		"Minecraft Dungeons 2",
+		"Big Walk",
+		"World of Warcraft: Forever",
+		"RV There Yet",
+		"Yap Yap",
+		"Super Battle Golf",
+		"We Gotta Go"
+	  ]
+  }
+]

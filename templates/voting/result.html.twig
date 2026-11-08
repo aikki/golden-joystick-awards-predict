@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ voter.award.name }}{% endblock %}
+
+{% block body %}
+    <div class="result-box">
+        <h3>Protokół typowania</h3>
+        <table>
+            <tr><td>Data głosowania</td><td>{{ voter.dateVoted|date('H:i:s d-m-Y') }}</td></tr>
+            <tr><td colspan="2"><hr /></td></tr>
+            {% for vote in voter.votes %}
+                <tr>
+                    <td>{{ vote.category.name }}</td>
+                    <td {% if vote.nominee.winner %}class="winner"{% endif %}{% if vote.nominee.loser %}class="loser"{% endif %}>
+                        {% if vote.nominee.winner %}<span class="icon">🕹</span> {% endif %}
+                        {% if vote.nominee.loser %}<span class="icon">✘</span> {% endif %}
+                        {{ vote.nominee.name }}
+                    </td>
+                </tr>
+            {% endfor %}
+            <tr><td colspan="2"><hr /></td></tr>
+            <tr><td>Zaznaczone</td><td >{{ voter.votes|length }}/{{ voter.award.categories|length }}</td></tr>
+            <tr><td>Trafione</td><td {% if voter.winnerVotes|length > 0 %}class="winner"{% endif %}>{{ voter.winnerVotes|length }}/{{ voter.award.categories|length }}</td></tr>
+        </table>
+
+        <div class="voter-signature margin-auto">
+            <p class="signature">{{ voter.name }}</p>
+            <label>podpis</label>
+        </div>
+    </div>
+{% endblock %}

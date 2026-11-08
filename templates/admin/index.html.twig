@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ award.name }}{% endblock %}
+
+{% block head %}
+    <script src="{{ asset('assets/masonry.pkgd.min.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <h1>{{ award.name }}</h1>
+
+    <p>Formularz zaznaczania zwycięzców</p>
+
+    {{ form_start(form) }}
+    <div class="grid">
+    {% for category in award.categories %}
+        <div class="grid-item {% if category.shouldBeDoubleWidth %}grid-item-double{% endif %}">
+            <h4>{{ category.name }}</h4>
+            {% for nominee in form['category_' ~ category.id] %}
+                <label>
+                    {{ form_widget(nominee) }}
+                    {{ nominee.vars.label }}
+                </label>
+            {% endfor %}
+        </div>
+    {% endfor %}
+        <div class="grid-item grid-item-double">
+            <h4>Zaznaczyłeś coś nie tak?</h4>
+            <p><span class="icon">☞</span> Prawym Przyciskiem Myszy możesz odznaczyć zaznaczoną odpowiedź</p>
+            <h4>Masz ochotę na replay?</h4>
+            <p class="clicker"><span class="icon">✘</span> kliknij tu dwa razy, żeby odznaczyć wszystkie</p>
+        </div>
+    </div>
+
+    <div class="floating">
+        <button type="submit">Zapisz</button>
+    </div>
+
+    {{ form_end(form) }}
+    <div class="clear"></div>
+
+    <script>
+        {
+            const uncheck = function(ev) {
+                ev.preventDefault();
+                ev.target.querySelector('input').checked = false;
+                return false;
+            }
+
+
+            const labels = document.querySelectorAll('.grid-item label');
+            labels.forEach(label => label.addEventListener('contextmenu', uncheck, true));
+
+            const radios = document.querySelectorAll('.grid-item input[type=radio]');
+
+            document.querySelector('.clicker').addEventListener('dblclick', function(ev) {
+                radios.forEach(input => input.checked = false);
+            });
+
+            const msnry = new Masonry( '.grid', { "itemSelector": ".grid-item", "columnWidth": 350, "gutter": 20 });
+            msnry.layout();
+            setTimeout(function() { msnry.layout(); }, 100);
+            setTimeout(function() { msnry.layout(); }, 500);
+        }
+    </script>
+{% endblock %}

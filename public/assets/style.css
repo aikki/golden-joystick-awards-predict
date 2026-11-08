@@ -1,0 +1,326 @@
+
+
+/* https://coolors.co/6b717e-efaac4-ffc4d1-cf972d-f4fdd9 */
+
+body {
+    font-family: "Fira Code", monospace;
+    background-color: #6B717E;
+    color: #F4FDD9;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container {
+    max-width: 1090px;
+    margin: 0 auto 200px;
+    min-height: calc(100vh - 339px);
+}
+
+.lock {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.icon {
+    font-family: "Noto Sans Symbols 2", sans-serif;
+    line-height: 0.7rem;
+}
+
+.lock .icon {
+    font-size: 10rem;
+    line-height: 9rem;
+}
+
+.grid-item {
+    width: 308px;
+    border-top: 1px solid #9CA1AB;
+    border-left: 1px solid #9CA1AB;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    padding: 0 20px 20px 20px;
+    transition: opacity 200ms;
+}
+
+.grid-item-double {
+    width: 658px;
+}
+
+.grid-item label {
+    cursor: pointer;
+    display: block;
+    font-size: 0.9rem;
+    /*line-height: 1.5rem;*/
+    padding: 3px 0;
+    transition: color 100ms;
+}
+.grid-item label input {
+    display: none;
+}
+.grid-item label:before {
+    content: '☐';
+    font-family: "Noto Sans Symbols 2", sans-serif;
+}
+
+.grid-item label:has(input:checked) {
+    color: #CF972D;
+}
+.grid-item label:has(input:checked):nth-child(odd):before {
+    content: '☑';
+}
+.grid-item label:has(input:checked):nth-child(even):before {
+    content: '☒'
+}
+
+.grid-item:has(input:checked) {
+    opacity: 0.3;
+}
+
+.grid-item:has(input:checked) h4:after {
+    content: ' ✓';
+    line-height: 0.7rem;
+}
+
+.grid-item:has(input:checked):hover {
+    opacity: 1;
+}
+
+.grid-item:has(.clicker) {
+    opacity: 0.3;
+}
+
+.grid-item:has(.clicker):hover {
+    opacity: 1;
+}
+
+.grid-item .clicker {
+    cursor: pointer;
+    user-select: none;
+}
+
+.float-right {
+    float: right;
+}
+.margin-auto {
+    margin: 0 auto;
+}
+
+.voter-signature {
+    width: 310px;
+    padding: 0 20px 20px 20px;
+    margin-top: 60px;
+    color: #9CA1AB;
+    text-align: center;
+    transition: color 300ms;
+}
+
+.voter-signature .counter {
+    transition: color 300ms;
+}
+
+.voter-signature input {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #F4FDD9;
+    font-family: var(--handwriting-font), cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.voter-signature input:focus, .voter-signature input:active {
+    outline: none;
+    border-bottom-color: #F4FDD9;
+}
+
+.voter-signature:has(input:focus), .voter-signature:has(input:active) {
+    color: #F4FDD9;
+}
+
+.voter-signature label {
+    display: block;
+    padding-top: 10px;
+    border-top: 2px dotted #9CA1AB;
+    transition: border-top-color 300ms;
+    margin-top: -15px;
+}
+
+.voter-signature:has(input:focus) label {
+    border-top-color: #F4FDD9;
+}
+
+.voter-signature:has(input:focus) .counter {
+    color: #EFAAC4;
+}
+
+.voter-signature:has(input:focus) .counter.max {
+    color: #CF972D;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(180deg, transparent 0%, transparent 40%, black 62%);
+}
+
+footer p {
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+footer a, footer span {
+    color: #EFAAC4;
+    text-decoration: none;
+    opacity: 0.2;
+    transition: opacity 200ms;
+}
+footer span {
+    cursor: default;
+}
+
+footer a:first-of-type {
+    color: #ff1d99;
+}
+footer a:last-of-type {
+    color: #008bfd;
+}
+footer a:hover, footer:hover span, footer p:hover span {
+    opacity: 1;
+}
+
+.result-box {
+    text-align: center;
+}
+.result-box table {
+    width: 100%;
+}
+.result-box table tr td hr {
+    border: 0;
+    border-bottom: 2px dotted #F4FDD9;
+    width: 50%;
+}
+.result-box table tr td {
+    padding: 2px 10px;
+    text-align: left;
+    width: 50%;
+}
+.result-box table tr td:first-child {
+    text-align: right;
+}
+.result-box table tr td:last-child {
+    font-weight: 700;
+}
+.voter-signature .signature {
+    font-size: 2rem;
+    color: #F4FDD9;
+    font-family: var(--handwriting-font), cursive;
+    margin-bottom: -12px;
+}
+
+.winner {
+    color: #CF972D;
+}
+
+.loser {
+    color: #EFAAC4;
+}
+
+.ranking {
+    width: 508px;
+    margin: 0 auto;
+}
+
+.ranking .voter {
+    display: block;
+    width: 467px;
+    border-top: 1px solid #9CA1AB;
+    border-left: 1px solid #9CA1AB;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    padding: 0 20px 20px 20px;
+    height: 42px;
+    text-decoration: none;
+    color: #9CA1AB;
+}
+
+.ranking .voter .position {
+    float: left;
+    font-size: 2em;
+    margin-top: 9px;
+}
+
+.ranking .voter .points {
+    float: right;
+    font-size: 2em;
+    margin-top: 9px;
+}
+
+.ranking .voter .name {
+    margin-top: 20px;
+}
+
+.ranking .voter:first-child {
+    color: #CF972D;
+    border-color: #CF972D;
+}
+
+.ranking .voter:nth-child(2) {
+    color: silver;
+    border-color: silver;
+}
+
+.ranking .voter:nth-child(3) {
+    color: #b98f71;
+    border-color: #b98f71;
+}
+
+.floating {
+    position: fixed;
+    bottom: 16px;
+    right: 20%;
+}
+
+.floating button, .save-button {
+    font-family: "Fira Code", monospace;
+    background-color: #6B717E;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 20px 20px 0 20px;
+    color: #F4FDD9;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-top: 1px solid #9CA1AB;
+    border-left: 1px solid #9CA1AB;
+    transition: color 200ms, border-color 200ms;
+}
+
+.floating button:hover, .save-button:hover {
+    color: #CF972D;
+    border-color: #CF972D;
+}
+
+.floating button:active, .save-button:active {
+    opacity: 0.6;
+}
+
+.button-container {
+    width: 310px;
+    padding: 0 20px 20px 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.save-button:disabled {
+    color: #9CA1AB;
+    border-color: #9CA1AB;
+    opacity: 0.3;
+    cursor: not-allowed;
+}
