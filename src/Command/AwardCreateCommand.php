@@ -22,8 +22,6 @@ readonly class AwardCreateCommand {
         #[Autowire('%kernel.project_dir%')]
         private string $projectDir,
         private EntityManagerInterface $entityManager,
-        #[Autowire('%env(DEFAULT_URI)%')]
-        private string $defaultUri,
         private RouterInterface $router,
     ) {}
 
@@ -85,8 +83,7 @@ readonly class AwardCreateCommand {
 
         $this->entityManager->flush();
 
-        $io->success('Award created successfully');
-        $io->outlineSuccess('Dashboard URL: ' .  $this->router->generate('app_admin', ['admin_token' => $award->getAdminKey()], RouterInterface::ABSOLUTE_URL));
+        $io->outlineSuccess('Dashboard URL: ' .  $this->router->generate('app_access', ['admin_token' => $award->getAdminKey()], RouterInterface::ABSOLUTE_URL));
 
         return Command::SUCCESS;
     }
