@@ -13,7 +13,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Routing\RouterInterface;
 
 #[AsCommand(
-    name: 'app:award:set-default',
+    name: 'app:award:rehash',
     description: 'Add a short description for your command',
 )]
 class AwardRehashCommand{
