@@ -324,3 +324,23 @@ footer a:hover, footer:hover span, footer p:hover span {
     opacity: 0.3;
     cursor: not-allowed;
 }
+
+.close-link {
+    margin-top: 40px;
+    color: #F4FDD9;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 1px solid #F4FDD9;
+    padding: 10px 20px;
+    border-radius: 20px 20px 0 20px;
+    transition: color 200ms, border-color 200ms;
+}
+
+.close-link:hover {
+    color: #CF972D;
+    border-color: #CF972D;
+}
+p.center {
+    text-align: center;
+    margin: 60px 0;
+}

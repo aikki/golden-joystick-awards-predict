@@ -11,6 +11,14 @@
 
     <p>Formularz zaznaczania zwycięzców</p>
 
+    <p class="center">
+        {% if award.isClosed %}
+            Głosowanie zamknięte.
+        {% else %}
+        <a href="{{ path('app_admin_close_voting') }}" class="close-link">Zamknij głosowanie</a>
+        {% endif %}
+    </p>
+
     {{ form_start(form) }}
     <div class="grid">
     {% for category in award.categories %}

@@ -184,4 +184,9 @@ class Award
 
         return $this;
     }
+
+    public function isClosed(): bool
+    {
+        return $this->getCloseDate() && $this->getCloseDate() < new \DateTime();
+    }
 }

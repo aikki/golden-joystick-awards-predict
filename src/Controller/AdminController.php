@@ -60,4 +60,17 @@ final class AdminController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+    #[Route('/dashboard/close_voting', name: 'app_admin_close_voting')]
+    public function closeVoting(Request $request, AwardRepository $awardRepository, EntityManagerInterface $entityManager): Response
+    {
+        $award = $awardRepository->findDefault();
+        $award->setCloseDate(new \DateTime());
+        $entityManager->persist($award);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('app_admin_dashboard');
+    }
+
+
 }

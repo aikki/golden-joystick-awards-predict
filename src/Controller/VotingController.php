@@ -22,7 +22,7 @@ final class VotingController extends AbstractController
             throw $this->createNotFoundException();
         }
 
-        if ($award->getCloseDate() && $award->getCloseDate() < new \DateTime()) {
+        if ($award->isClosed()) {
             return $this->redirectToRoute('app_voting_ranking');
         }
 
